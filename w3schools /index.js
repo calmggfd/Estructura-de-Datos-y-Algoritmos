@@ -1,18 +1,16 @@
-public class Main   {
-    public static void main(String[]    args)   {
-        int prev2   =   0;
-        int prev1   =   1;
+const N = parseInt(prompt('Introduce el numero de terminos:'));
+let fn1 =   0,  fn2 =   1,  nextFibonacci;
 
-        System.out.println(prev2);
-        System.out.println(prev1);
+console.log('la serie de fibonacci subiendo hasta n terminos es:');
 
-        for (int    fibo    =   0;  fibo    <   18; fibo++) {
-            int newFibo =   prev1   +   prev2;
-            System.out.println(newFibo);
-            prev2   =   prev1;
-            prev1   =   newFibo;
-        }
-    }
+for (let i  =   1;  i <=    N;  i++){
+    console.log(fn1);
+    nextFibonacci   =   fn1 +   fn2;
+    fn1 =   fn2;
+    fn2 =   nextFibonacci
 }
 
-https://www.w3schools.com/dsa/dsa_algo_simple.php   
+
+
+// https://www.w3schools.com/dsa/dsa_algo_simple.php
+// https://www.naukri.com/code360/library/fibonacci-series-in-javascript   
