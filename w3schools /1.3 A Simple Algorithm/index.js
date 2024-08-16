@@ -14,7 +14,4 @@ function    fibonacci(n)    {
 
 console.log(fibonacci(5));
 
-// https://www.w3schools.com/dsa/dsa_algo_simple.php
-// https://www.naukri.com/code360/library/fibonacci-series-in-javascript   
-// https://www.youtube.com/watch?v=6ji-oYS6EgM
-// https://www.youtube.com/results?search_query=estructura+de+datos+y+algoritmos+Fibonacci+
+// https://www.w3schools.com/dsa/dsa_algo_simple.php   
