@@ -1,20 +1,22 @@
-function    fibonacci(n)    {
-    if(n    ==  0){
-        return  0;
-    }
-    if(n    ==  1){
-        return  1;
-    }
-    if(n    ==  0   ||  n   ==  1){
-        return  n;
-    }
+// https://www.youtube.com/watch?v=GsquoxlZX5E
+// function    fibonacci(limit){
+//     const arrFib    =   [0, 1];
+//     for(let i   =   2;  i   <   limit;  i++)    {
+//         arrFib.push(arrFib[i    -   1]  +   arrFib[i    -   2]);
+//     }
+//     return arrFib;
+// }
 
-    return    fibonacci(n -   1)  +   fibonacci(n -2);    
+// const testFib   =   fibonacci(20);
+// console.log(testFib);
+
+function    fibonacci(limit){
+    const   arrFib  =   [0, 1];
+    for(let i   =   2;  i   <   limit;  i++){
+        arrFib.push(arrFib[i    -   1]  +   arrFib[i    -   2])
+    }
+    return  arrFib;
 }
 
-console.log(fibonacci(5));
-
-// https://www.w3schools.com/dsa/dsa_algo_simple.php
-// https://www.naukri.com/code360/library/fibonacci-series-in-javascript   
-// https://www.youtube.com/watch?v=6ji-oYS6EgM
-// https://www.youtube.com/results?search_query=estructura+de+datos+y+algoritmos+Fibonacci+
+const testFib   =   fibonacci(3);
+console.log(testFib);
